@@ -1,0 +1,52 @@
+# Rust
+/target/
+**/target/
+*.rs.bk
+Cargo.lock
+
+# Node
+node_modules/
+**/node_modules/
+
+# Build outputs
+/dist/
+**/dist/
+/build/
+**/build/
+/.vite/
+**/.vite/
+
+# Environment files
+.env
+.env.*
+
+# Logs and coverage
+*.log
+logs/
+coverage/
+coverage/**
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.DS_Store
+Thumbs.db
+
+# OS files
+Desktop.ini
+ehthumbs.db
+Icon
+
+# Vercel
+.vercel/
+.vercel/**
+
+# Temporary
+*.tmp
+*.temp
+*.swp
+*.bak
+*.old
+*.orig
