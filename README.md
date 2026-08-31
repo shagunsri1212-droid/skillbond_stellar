@@ -1,13 +1,10 @@
 ## SUBMISSION CHECKLIST
 ## 1) CI PASSING BADGE - [![CI](https://github.com/shagunsri1212-droid/skillbond_stellar/actions/workflows/ci.yml/badge.svg)](https://github.com/shagunsri1212-droid/skillbond_stellar/actions/workflows/ci.yml)
 
-<<<<<<< HEAD
+
 ## 2) Live demo link (Verce) - https://skillbond-stellar.vercel.app/
-=======
 [![CI](https://github.com/shagunsri1212-droid/skillbond_stellar/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/shagunsri1212-droid/skillbond_stellar/actions/workflows/ci.yml)
 
-Trustless milestone escrow for student and freelance work, powered by Stellar.
->>>>>>> dfb9df6 (ci badge fix)
 
 ## 3) Contract deployment address - VITE_PROJECT_CONTRACT_ID=CA4WFUELYGBCYRGQ7S35RNJHASVFDBYZ5PJ4GA255MIVZNLTJBBRSUHZ
 
@@ -28,6 +25,7 @@ Test output with 3+ passing tests
 
 
 ## 6) Demo video link (1–2 minutes)
+https://youtu.be/2B_dKTP5BwE?si=LKdcpHr0DEq3M0W9
 
 
 <div align="center">
@@ -71,10 +69,10 @@ process the project workflow on-chain.
 
 | | |
 |---|---|
-| **Live deployed link** | Coming soon |
-| **Demo video link** | Coming soon |
-| **GitHub repository** | Coming soon |
-| **Stellar Testnet Explorer** | Coming soon |
+| **Live deployed link** | https://skillbond-stellar.vercel.app/ |
+| **Demo video link** | https://youtu.be/2B_dKTP5BwE?si=LKdcpHr0DEq3M0W9 |
+| **GitHub repository** | https://github.com/shagunsri1212-droid/skillbond_stellar |
+
 
 **Network:** Stellar Testnet
 
