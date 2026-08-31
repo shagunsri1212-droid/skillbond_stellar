@@ -82,12 +82,6 @@ process the project workflow on-chain.
 
 ---
 
-## 📸 Screenshots
-
-Coming soon
-
----
-
 ## ✨ Features
 
 - **🔗 Connect Stellar wallet** — Connect a Stellar wallet to interact with the application.
