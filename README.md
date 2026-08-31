@@ -1,3 +1,25 @@
+## SUBMISSION CHECKLIST
+## 1) CI PASSING BADGE
+
+## 2) Live demo link (Verce) - https://skillbond-stellar.vercel.app/
+
+## 3) Contract deployment address - VITE_PROJECT_CONTRACT_ID=CA4WFUELYGBCYRGQ7S35RNJHASVFDBYZ5PJ4GA255MIVZNLTJBBRSUHZ
+
+## 4) Transaction hash for contract interaction
+
+## 5) Screenshot showing:
+Mobile responsive UI
+
+
+CI/CD pipeline running
+
+
+Test output with 3+ passing tests
+
+
+## 6) Demo video link (1–2 minutes)
+
+
 <div align="center">
 
 # 🤝 SkillBond
