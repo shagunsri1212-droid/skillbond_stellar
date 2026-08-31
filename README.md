@@ -1,86 +1,160 @@
-# SkillBond
+<div align="center">
 
-Trustless milestone escrow for student and freelance work, powered by Stellar.
+# 🤝 SkillBond
 
-## Overview
+### Stellar-powered milestone escrow for student freelancers
 
-SkillBond is a production-oriented MVP foundation for a Stellar-powered milestone escrow platform. It is designed to connect clients and student freelancers through secure, contract-backed payment flows while keeping the repository focused and easy to evolve.
+[![Stellar](https://img.shields.io/badge/Stellar-Testnet-7b16ff?logo=stellar&logoColor=white)](https://stellar.org)
+[![Soroban](https://img.shields.io/badge/Soroban-Smart%20Contracts-7b16ff?logo=stellar&logoColor=white)](https://soroban.stellar.org)
+[![Frontend](https://img.shields.io/badge/Frontend-React%20%2B%20TypeScript-61DAFB?logo=react&logoColor=white)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-## Problem
+> A simple on-chain milestone workflow for clients and student freelancers.
+> SkillBond enables clients and workers to create, submit, and approve project milestones
+> using Stellar Soroban smart contracts.
 
-Students and freelance clients often struggle with trust when payment is tied to work milestones. Clients worry about paying early, while freelancers worry about receiving funds after delivering agreed work.
+GitHub username → `shagunsri1212-droid`
+GitHub repo → Coming soon
 
-## Solution
+</div>
 
-SkillBond locks client funds in a Soroban escrow contract and releases milestone payments only after the correct milestone approval action occurs. This removes single-party trust from the payment flow and provides transparent, blockchain-backed milestone settlement.
+---
 
-## Core Workflow
+## ✨ What is this?
 
-- Client creates project
-- Client funds escrow
-- Worker accepts the project
-- Worker submits a milestone
-- Client approves the milestone
-- Payment is released from escrow
-- Reputation is updated for successful participants
-- Event appears in the activity feed
+**SkillBond** is a Stellar-based decentralized milestone escrow platform designed for
+**clients and student freelancers**.
 
-## Planned Features
+The platform provides a simple on-chain workflow where a client can create a project,
+assign a worker, define an agreed amount and milestones, and release the agreed payment
+after the worker submits a completed milestone and the client approves it.
 
-- Stellar wallet connection
-- Project creation
-- Milestone management
-- Soroban escrow
-- Inter-contract communication
-- Reputation system
-- Smart contract events
-- Real-time activity feed
-- Transaction status
-- Error handling
-- Loading states
-- Responsive mobile UI
-- Contract tests
-- Frontend tests
-- CI/CD
-- Stellar Testnet deployment
+The application uses **Stellar Testnet** and **Soroban smart contracts** to record and
+process the project workflow on-chain.
 
-## Smart Contracts
+---
 
-- Project Contract: manages project lifecycle, milestones, participants, and approval state.
-- Escrow Contract: holds client deposits and releases payments when milestones are approved.
-- Reputation Contract: tracks reputation and success metrics for freelancers and clients.
+## 🚀 Live Links & Testnet Deployments
 
-## Architecture
+| | |
+|---|---|
+| **Live deployed link** | Coming soon |
+| **Demo video link** | Coming soon |
+| **GitHub repository** | Coming soon |
+| **Stellar Testnet Explorer** | Coming soon |
 
-The planned architecture connects the React frontend to a backend API and event processor, which indexes Soroban contract events from Stellar RPC and serves real-time updates.
+**Network:** Stellar Testnet
 
-## Technology Stack
+**Smart Contract:** Soroban
 
-- Rust + Soroban SDK for smart contracts
-- React + Vite + TypeScript for frontend
-- Node.js + TypeScript for backend
-- PostgreSQL for indexed application and event data
-- Stellar RPC for blockchain data and events
-- GitHub Actions for CI/CD
-- Vercel for frontend deployment
+**Contract ID:** Coming soon
 
-## Security
+---
 
-Private keys, Stellar secret keys, wallet credentials, API secrets, and database passwords must never be committed to GitHub. The repository foundation is intentionally kept free of secrets and environment values.
+## 📸 Screenshots
 
-## Development Roadmap
+Coming soon
 
-- Phase 1 — Repository and environment
-- Phase 2 — Smart contract foundation
-- Phase 3 — Contract tests
-- Phase 4 — Inter-contract communication
-- Phase 5 — Stellar Testnet deployment
-- Phase 6 — Backend and event processing
-- Phase 7 — Frontend and wallet integration
-- Phase 8 — Frontend testing
-- Phase 9 — CI/CD
-- Phase 10 — Production deployment and documentation
+---
 
-## Project Status
+## ✨ Features
 
-In Development
+- **🔗 Connect Stellar wallet** — Connect a Stellar wallet to interact with the application.
+- **📋 Create projects** — A client can create a project agreement by specifying the project ID, worker public address, agreed amount, and milestone count.
+- **👨‍💻 Worker assignment** — Each project stores the worker's Stellar public address.
+- **💰 Agreed project amount** — The client specifies the amount agreed for the project.
+- **🎯 Milestone-based workflow** — Projects can contain one or more milestones.
+- **📤 Submit milestone** — Only the worker address stored on the project can submit a milestone.
+- **✅ Approve milestone** — Only the client address stored on the project can approve a submitted milestone.
+- **🔐 On-chain verification** — Project state and milestone actions are handled through Soroban smart contracts.
+- **🔎 Load project state** — Users can enter a project ID and read its current Soroban state.
+- **🌐 Stellar Testnet integration** — The application currently operates on Stellar Testnet.
+- **🦊 Wallet-based authorization** — Actions are restricted according to the client and worker addresses stored in the project.
+
+---
+
+## 🧱 Tech Stack
+
+| Layer | Technologies |
+|-------|-------------|
+| 🌐 Frontend | React, TypeScript, Vite |
+| 👛 Wallet | Stellar wallet / Freighter |
+| ⛓️ Blockchain | Stellar Testnet |
+| 📜 Smart Contracts | Soroban |
+| 🧪 Testing | Coming soon |
+| 🚀 Deployment | Vercel |
+| 📦 Version Control | GitHub |
+
+---
+
+## 🧪 Test Status
+
+> Test results
+
+Coming soon
+
+| Suite | Result |
+|-------|--------|
+| Frontend tests | Coming soon |
+| Smart contract tests | Coming soon |
+| Build | Coming soon |
+| GitHub Actions CI | Coming soon |
+
+---
+
+## 🏗️ Smart Contract
+
+SkillBond uses a **Soroban smart contract** to manage the project milestone workflow.
+
+### Project workflow
+
+1. 👛 Client connects their Stellar wallet.
+2. 📝 Client creates a project agreement.
+3. 👨‍💻 Client specifies the worker's Stellar public address.
+4. 💰 Client specifies the agreed project amount.
+5. 🎯 Client specifies the number of milestones.
+6. ⛓️ Project information is recorded on-chain.
+7. 📤 Worker submits the milestone after completing the work.
+8. 👀 Client reviews the submitted milestone.
+9. ✅ Client approves the milestone.
+10. 💸 The milestone payment is processed according to the smart contract logic.
+
+---
+
+## 🔐 Authorization
+
+SkillBond uses wallet addresses to control who can perform specific actions.
+
+### Client
+
+Only the **client address stored on the project** can approve a submitted milestone.
+
+### Worker
+
+Only the **worker address stored on the project** can submit a milestone.
+
+This provides an on-chain authorization mechanism without relying solely on
+centralized application logic.
+
+---
+
+## 📊 Example Project
+
+The application has been tested with the following project state:
+
+| Property | Value |
+|----------|-------|
+| **Project ID** | `1001` |
+| **Agreed Amount** | `100000000` |
+| **Milestones** | `1` |
+| **Current Milestone** | `1 of 1` |
+| **Awaiting Client Approval** | `No` |
+| **Network** | Stellar Testnet |
+
+The project workflow has also been tested with project IDs:
+
+```text
+1001
+1002
+1003
