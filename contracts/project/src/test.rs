@@ -20,8 +20,7 @@ fn test_create_project() {
     let client_addr = Address::generate(&env);
     let worker_addr = Address::generate(&env);
 
-    client
-        .create_project(&1u64, &client_addr, &worker_addr, &100i128, &2u32);
+    client.create_project(&1u64, &client_addr, &worker_addr, &100i128, &2u32);
 
     let project = client.get_project(&1u64);
     assert_eq!(project.project_id, 1u64);
@@ -39,14 +38,10 @@ fn test_duplicate_project_rejected() {
     let client_addr = Address::generate(&env);
     let worker_addr = Address::generate(&env);
 
-    client
-        .create_project(&2u64, &client_addr, &worker_addr, &50i128, &1u32);
+    client.create_project(&2u64, &client_addr, &worker_addr, &50i128, &1u32);
 
     let res = client.try_create_project(&2u64, &client_addr, &worker_addr, &50i128, &1u32);
-    assert!(matches!(
-        res,
-        Err(Ok(ContractError::ProjectAlreadyExists))
-    ));
+    assert!(matches!(res, Err(Ok(ContractError::ProjectAlreadyExists))));
 }
 
 #[test]
@@ -55,8 +50,7 @@ fn test_worker_can_submit_milestone() {
     let client_addr = Address::generate(&env);
     let worker_addr = Address::generate(&env);
 
-    client
-        .create_project(&3u64, &client_addr, &worker_addr, &200i128, &2u32);
+    client.create_project(&3u64, &client_addr, &worker_addr, &200i128, &2u32);
 
     // worker submits
     client.submit_milestone(&3u64);
@@ -71,8 +65,7 @@ fn test_client_can_approve_submitted_milestone() {
     let client_addr = Address::generate(&env);
     let worker_addr = Address::generate(&env);
 
-    client
-        .create_project(&4u64, &client_addr, &worker_addr, &300i128, &2u32);
+    client.create_project(&4u64, &client_addr, &worker_addr, &300i128, &2u32);
 
     client.submit_milestone(&4u64);
 
@@ -88,15 +81,11 @@ fn test_client_cannot_approve_without_submission() {
     let client_addr = Address::generate(&env);
     let worker_addr = Address::generate(&env);
 
-    client
-        .create_project(&5u64, &client_addr, &worker_addr, &400i128, &1u32);
+    client.create_project(&5u64, &client_addr, &worker_addr, &400i128, &1u32);
 
     // client tries to approve without submission
     let res = client.try_approve_milestone(&5u64);
-    assert!(matches!(
-        res,
-        Err(Ok(ContractError::MilestoneNotSubmitted))
-    ));
+    assert!(matches!(res, Err(Ok(ContractError::MilestoneNotSubmitted))));
 }
 
 #[test]
@@ -133,8 +122,7 @@ fn test_project_completes_after_final_milestone() {
     let client_addr = Address::generate(&env);
     let worker_addr = Address::generate(&env);
 
-    client
-        .create_project(&7u64, &client_addr, &worker_addr, &500i128, &2u32);
+    client.create_project(&7u64, &client_addr, &worker_addr, &500i128, &2u32);
 
     // first milestone
     client.submit_milestone(&7u64);

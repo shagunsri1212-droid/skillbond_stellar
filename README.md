@@ -1,7 +1,13 @@
 ## SUBMISSION CHECKLIST
 ## 1) CI PASSING BADGE
 
+<<<<<<< HEAD
 ## 2) Live demo link (Verce) - https://skillbond-stellar.vercel.app/
+=======
+[![CI](https://github.com/shagunsri1212-droid/skillbond_stellar/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/shagunsri1212-droid/skillbond_stellar/actions/workflows/ci.yml)
+
+Trustless milestone escrow for student and freelance work, powered by Stellar.
+>>>>>>> dfb9df6 (ci badge fix)
 
 ## 3) Contract deployment address - VITE_PROJECT_CONTRACT_ID=CA4WFUELYGBCYRGQ7S35RNJHASVFDBYZ5PJ4GA255MIVZNLTJBBRSUHZ
 
