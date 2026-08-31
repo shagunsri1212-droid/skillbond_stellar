@@ -1,5 +1,5 @@
 ## SUBMISSION CHECKLIST
-## 1) CI PASSING BADGE
+## 1) CI PASSING BADGE - [![CI](https://github.com/shagunsri1212-droid/skillbond_stellar/actions/workflows/ci.yml/badge.svg)](https://github.com/shagunsri1212-droid/skillbond_stellar/actions/workflows/ci.yml)
 
 <<<<<<< HEAD
 ## 2) Live demo link (Verce) - https://skillbond-stellar.vercel.app/
@@ -15,7 +15,7 @@ Trustless milestone escrow for student and freelance work, powered by Stellar.
 
 ## 5) Screenshot showing:
 Mobile responsive UI
-
+<img width="1222" height="973" alt="WhatsApp Image 2026-08-31 at 11 05 34 PM" src="https://github.com/user-attachments/assets/75e1daf6-06b2-4b60-80c5-e9f631b0514a" />
 
 CI/CD pipeline running
 
