@@ -50,3 +50,20 @@ Icon
 *.bak
 *.old
 *.orig
+
+# Dependencies
+frontend/node_modules/
+backend/node_modules/
+
+# Build output
+frontend/dist/
+
+# Environment variables
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Rust build output
+target/
+contracts/project/target/
+
